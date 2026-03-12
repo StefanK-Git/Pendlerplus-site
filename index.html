@@ -9,53 +9,70 @@
 <style>
 
 body{
-    font-family: system-ui, -apple-system, Arial, sans-serif;
+    font-family: system-ui,-apple-system,Arial,sans-serif;
     margin:0;
     background:#f5f7fb;
     color:#333;
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
-}
-
 .hero{
     background:#2F6FED;
     color:white;
-    text-align:center;
+}
+
+.hero-content{
+    max-width:1100px;
+    margin:auto;
     padding:80px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
 }
 
 .logo{
-    width:120px;
+    width:90px;
     margin-bottom:20px;
 }
 
-.hero h1{
+.hero-text h1{
     font-size:42px;
-    margin-bottom:10px;
+    margin:0 0 10px 0;
 }
 
-.hero p{
+.hero-text p{
     font-size:20px;
     opacity:0.9;
 }
 
-.screenshot{
-    margin-top:40px;
-}
-
-.screenshot img{
-    width:100%;
-    max-width:340px;
+.hero-image img{
+    width:320px;
     border-radius:20px;
-    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+    box-shadow:0 12px 30px rgba(0,0,0,0.25);
 }
 
-.section{
-    padding:40px 20px;
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.features{
+    display:flex;
+    gap:30px;
+    margin-bottom:50px;
+}
+
+.feature{
+    flex:1;
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.feature h3{
+    margin-top:0;
 }
 
 .card{
@@ -64,10 +81,6 @@ body{
     border-radius:16px;
     margin-bottom:30px;
     box-shadow:0 4px 20px rgba(0,0,0,0.05);
-}
-
-.card h2{
-    margin-top:0;
 }
 
 a{
@@ -86,13 +99,38 @@ footer{
     font-size:14px;
 }
 
+/* Mobile */
+
+@media (max-width: 800px){
+
+.hero-content{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-image img{
+width:260px;
+}
+
+.features{
+flex-direction:column;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
+<!-- HERO -->
+
 <div class="hero">
+
+<div class="hero-content">
+
+<div class="hero-text">
 
 <img src="logo.png" alt="PendlerPlus Logo" class="logo">
 
@@ -100,14 +138,61 @@ footer{
 
 <p>Behalte Pendel- und Homeoffice-Tage im Blick</p>
 
-<div class="screenshot">
+</div>
+
+<div class="hero-image">
+
 <img src="screenshot.png" alt="PendlerPlus App Screenshot">
+
+</div>
+
 </div>
 
 </div>
 
 
-<div class="container section">
+<!-- CONTENT -->
+
+<div class="container">
+
+<!-- FEATURES -->
+
+<div class="features">
+
+<div class="feature">
+
+<h3>Ein Klick pro Arbeitstag</h3>
+
+<p>
+Erfasse Büro-, Homeoffice- oder freie Tage schnell und unkompliziert.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Jahresübersicht</h3>
+
+<p>
+Behalte alle Arbeitstage und Pendeltage im gesamten Jahr im Überblick.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Steuer vorbereiten</h3>
+
+<p>
+Dokumentiere deine Pendeltage und behalte geschätzte Werbungskosten im Blick.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- ABOUT -->
 
 <div class="card">
 
@@ -124,11 +209,15 @@ So kannst du deine Arbeitstage das ganze Jahr über festhalten und die Angaben f
 </div>
 
 
+<!-- SUPPORT -->
+
 <div class="card">
 
 <h2>Support</h2>
 
-<p>Bei Fragen oder Feedback erreichst du uns unter:</p>
+<p>
+Bei Fragen oder Feedback erreichst du uns unter:
+</p>
 
 <p>
 <a href="mailto:support@pendlerplus.com">support@pendlerplus.com</a>
@@ -136,6 +225,8 @@ So kannst du deine Arbeitstage das ganze Jahr über festhalten und die Angaben f
 
 </div>
 
+
+<!-- LEGAL -->
 
 <div class="card">
 
