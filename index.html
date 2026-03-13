@@ -40,7 +40,8 @@ body{
 }
 
 .hero-text h1{
-    font-size:42px;
+    font-size:44px;
+    font-weight:700;
     margin:0 0 10px 0;
 }
 
@@ -87,6 +88,23 @@ body{
     border-radius:16px;
     margin-bottom:30px;
     box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.card,
+.feature{
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover,
+.feature:hover{
+    transform: translateY(-3px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.section-divider{
+    height:1px;
+    background:#e6e9f2;
+    margin:60px 0;
 }
 
 a{
@@ -197,6 +215,8 @@ Dokumentiere deine Pendeltage und behalte geschätzte Werbungskosten im Blick.
 
 </div>
 
+<div class="section-divider"></div>
+
 
 <!-- ABOUT -->
 
@@ -213,6 +233,8 @@ So kannst du deine Arbeitstage das ganze Jahr über festhalten und die Angaben f
 </p>
 
 </div>
+
+<div class="section-divider"></div>
 
 
 <!-- SUPPORT -->
@@ -232,23 +254,6 @@ Bei Fragen oder Feedback erreichst du uns unter:
 </div>
 
 
-<!-- LEGAL -->
-
-<div class="card">
-
-<h2>Rechtliches</h2>
-
-<p>
-<a href="/privacy/">Datenschutzerklärung</a>
-</p>
-
-<p>
-<a href="/imprint/">Impressum</a>
-</p>
-
-</div>
-
-
 <footer>
 
 <p>
@@ -256,8 +261,8 @@ Bei Fragen oder Feedback erreichst du uns unter:
 </p>
 
 <p>
-<a href="/privacy/">Datenschutzerklärung</a> |
-<a href="/imprint/">Impressum</a>
+<a href="privacy/">Datenschutzerklärung</a> |
+<a href="imprint/">Impressum</a>
 </p>
 
 </footer>
