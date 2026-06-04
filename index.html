@@ -51,12 +51,32 @@ body{
 }
 
 .hero-cta{
-    margin-top:28px;
+    margin-top:32px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+}
+
+.cta-copy{
+    margin:0;
+    font-size:18px;
+    font-weight:600;
+    color:rgba(255,255,255,0.96);
 }
 
 .play-badge{
     display:inline-block;
     line-height:0;
+    border-radius:14px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.play-badge:hover{
+    transform: translateY(-2px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.18);
+    opacity:0.98;
+    text-decoration:none;
 }
 
 .play-badge img{
@@ -130,6 +150,18 @@ a:hover{
     text-decoration:underline;
 }
 
+.download-card{
+    text-align:center;
+}
+
+.download-card p{
+    margin-bottom:18px;
+}
+
+.download-card .play-badge{
+    margin:0 auto;
+}
+
 footer{
     text-align:center;
     margin-top:40px;
@@ -146,6 +178,10 @@ flex-direction:column;
 text-align:center;
 }
 
+.hero-cta{
+align-items:center;
+}
+
 .hero-image img{
 width:320px;
 }
@@ -157,6 +193,10 @@ flex-direction:column;
 .play-badge img{
 height:56px;
 margin:0 auto;
+}
+
+.cta-copy{
+font-size:17px;
 }
 
 }
@@ -182,6 +222,7 @@ margin:0 auto;
 <p>Behalte Pendel- und Homeoffice-Tage im Blick</p>
 
 <div class="hero-cta">
+<p class="cta-copy">Jetzt kostenlos bei Google Play herunterladen</p>
 <a
     class="play-badge"
     href="https://play.google.com/store/apps/details?id=de.pendlerplus.app"
@@ -265,6 +306,34 @@ PendlerPlus hilft dir dabei, Büro- und Homeoffice-Tage einfach zu dokumentieren
 <p>
 So kannst du deine Arbeitstage das ganze Jahr über festhalten und die Angaben für deine Steuererklärung jederzeit nachvollziehen.
 </p>
+
+</div>
+
+<div class="section-divider"></div>
+
+
+<!-- DOWNLOAD -->
+
+<div class="card download-card">
+
+<h2>Jetzt herunterladen</h2>
+
+<p>
+Hol dir PendlerPlus kostenlos im Google Play Store.
+</p>
+
+<a
+    class="play-badge"
+    href="https://play.google.com/store/apps/details?id=de.pendlerplus.app"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="PendlerPlus im Google Play Store herunterladen"
+>
+    <img
+        src="https://play.google.com/intl/en_us/badges/static/images/badges/de_badge_web_generic.png"
+        alt="Jetzt bei Google Play"
+    >
+</a>
 
 </div>
 
